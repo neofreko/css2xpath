@@ -14,7 +14,7 @@
     </inputs>
       <execute><![CDATA[
    //include css to xpath convert function
-   y.include("http://james.padolsey.com/scripts/javascript/css2xpath.js");
+   y.include("https://github.com/neofreko/css2xpath/raw/master/css2xpath.js");
    var query = null;
    if (css) {
       var xpath = CSS2XPATH(css);
