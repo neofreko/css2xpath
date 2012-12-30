@@ -60,7 +60,7 @@ function CSS2XPATH(selector) {
                 return pre + (m.match(/^[a-z0-9]/)?'':'*') + '[@id=\'' + id + '\']';
             }],
             /* .className */
-            [/([a-z0-9]?)\.([a-z][-a-z0-9]+)/ig, function(m,pre,cls){
+            [/([a-z0-9]?)\.(-?[_a-zA-Z]+[_a-zA-Z0-9-]*)/ig, function(m,pre,cls){
                 return pre + (m.match(/^[a-z0-9]/)?'':'*') + '[contains(concat(\' \',@class,\' \'),\' ' + cls + ' \')]';
             }]
         ],
